@@ -1,6 +1,7 @@
 const fullName = document.getElementById('as_full_name');
 const nameUser = document.getElementById('as_name');
 const usernameUser = document.getElementById('as_username');
+const urlPublic = 'https://asystem.up.railway.app';
 
 document.addEventListener("DOMContentLoaded", function () {
     const token = localStorage.getItem("token");
@@ -80,7 +81,7 @@ window.location.href = "/";
 function getUserCurrent() {
     const token = localStorage.getItem('token');
 
-fetch('http://localhost:5000/api/users/current',{
+fetch(`${urlPublic}/api/users/current`,{
     method: 'GET',
     headers: {
         'Authorization': token,
