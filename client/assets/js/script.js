@@ -1,4 +1,5 @@
 const textInputs = document.querySelectorAll("input");
+const urlPublic = 'https://asystem.up.railway.app';
 
 textInputs.forEach((textInput) => {
   textInput.addEventListener("focus", () => {
@@ -56,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    fetch("http://localhost:5000/api/users/login", {
+    fetch(`${urlPublic}/api/users/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -128,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
       password
     };
 
-  fetch('http://localhost:5000/api/users', {
+  fetch(`${urlPublic}/api/users`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
