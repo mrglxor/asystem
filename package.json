@@ -1,0 +1,22 @@
+{
+  "name": "server-a.system",
+  "version": "1.0.0",
+  "description": "System name a.system",
+  "main": "server/src/server.js",
+  "scripts": {
+    "test": "server a.system",
+    "dev": "nodemon server/src/server.js",
+    "start": "node server/src/server.js"
+  },
+  "author": "Muhamad Farhan",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "mongoose": "^8.0.3",
+    "uuid": "^9.0.1"
+  }
+}

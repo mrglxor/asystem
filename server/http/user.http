@@ -1,0 +1,5 @@
+### GET Current User
+GET http://localhost:5000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 990c9610-c29d-4936-9265-25d5b4cb0981
